@@ -3,12 +3,12 @@
 Summary:	%{_modname} - Add callbacks for any function/method
 Summary(pl.UTF-8):	%{_modname} - odwołania dla dowolnej funkcji / metody
 Name:		php-pecl-%{_modname}
-Version:	0.2.2
+Version:	0.2.3
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	5a86a01b065d3d767d8b0f7a2a3ca865
+# Source0-md5:	807d807ebce8d610805c85190e388c1b
 URL:		http://pecl.php.net/package/funcall/
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
