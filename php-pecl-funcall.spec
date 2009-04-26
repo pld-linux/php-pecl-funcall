@@ -5,7 +5,7 @@ Summary(pl.UTF-8):	%{_modname} - odwołania dla dowolnej funkcji / metody
 Name:		php-pecl-%{_modname}
 Version:	0.2.5
 Release:	1
-License:	BSD
+License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	0c4f2a989d3b21f1dab56b9959fb9fe8
