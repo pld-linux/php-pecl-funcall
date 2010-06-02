@@ -4,7 +4,7 @@ Summary:	%{_modname} - Add callbacks for any function/method
 Summary(pl.UTF-8):	%{_modname} - odwołania dla dowolnej funkcji / metody
 Name:		php-pecl-%{_modname}
 Version:	0.2.5
-Release:	1
+Release:	2
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
