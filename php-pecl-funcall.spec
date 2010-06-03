@@ -1,15 +1,16 @@
 %define		modname	funcall
-%define		status		stable
+%define		status	stable
 Summary:	%{modname} - Add callbacks for any function/method
 Summary(pl.UTF-8):	%{modname} - odwołania dla dowolnej funkcji / metody
 Name:		php-pecl-%{modname}
 Version:	0.2.5
-Release:	2
+Release:	3
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	0c4f2a989d3b21f1dab56b9959fb9fe8
 URL:		http://pecl.php.net/package/funcall/
+Patch0:		branch.diff
 BuildRequires:	php-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
@@ -30,6 +31,7 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -qc
 mv %{modname}-%{version}/* .
+%patch0 -p1
 
 %build
 phpize
