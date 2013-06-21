@@ -1,10 +1,11 @@
+%define		php_name	php%{?php_suffix}
 %define		subver	alpha
 %define		rel		1
 %define		modname	funcall
 %define		status	stable
 Summary:	%{modname} - Add callbacks for any function/method
 Summary(pl.UTF-8):	%{modname} - odwołania dla dowolnej funkcji / metody
-Name:		php-pecl-%{modname}
+Name:		%{php_name}-pecl-%{modname}
 Version:	0.3.0
 Release:	0.%{subver}.%{rel}
 License:	New BSD
@@ -12,8 +13,8 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}%{subver}.tgz
 # Source0-md5:	65ddff0346ed4ed4fb0e3734ccf1b7d2
 URL:		http://pecl.php.net/package/funcall/
-BuildRequires:	php-devel >= 4:5.0.4
-BuildRequires:	rpmbuild(macros) >= 1.344
+BuildRequires:	%{php_name}-devel >= 4:5.0.4
+BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
