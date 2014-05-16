@@ -1,6 +1,6 @@
 %define		php_name	php%{?php_suffix}
 %define		subver	alpha
-%define		rel		2
+%define		rel		3
 %define		modname	funcall
 %define		status	stable
 Summary:	%{modname} - Add callbacks for any function/method
@@ -17,6 +17,7 @@ BuildRequires:	%{php_name}-devel >= 4:5.0.4
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
+Obsoletes:	php-pecl-funcall < 0.3.0-0.alpha.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
